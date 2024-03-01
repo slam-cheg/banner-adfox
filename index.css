@@ -42,7 +42,6 @@ body {
 
 .girl {
   position: absolute;
-  width: 127px;
   top: 0;
   left: 20px;
   opacity: 1;
@@ -51,20 +50,17 @@ body {
 }
 @media screen and (max-width: 1200px) {
   .girl {
-    width: 137px;
-    top: -5px;
     left: 0;
   }
 }
 @media screen and (max-width: 640px) {
   .girl {
-    width: 129px;
-    left: -28px;
+    left: -55px;
   }
 }
 @media screen and (max-width: 480px) {
   .girl {
-    right: calc(50% - 187px);
+    right: calc(50% - 218px);
     left: unset;
   }
 }
@@ -316,16 +312,9 @@ body {
 }
 
 .button-top {
-  color: #262b11;
-  background: #939090;
-  font-size: 10px;
-  padding: 5px 4px 3px 4px;
-  border-radius: 10px;
-  font-family: "Raleway";
-  font-weight: 400;
-  line-height: 1.2;
-  text-align: center;
-  max-width: 100px;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .button {
