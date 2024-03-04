@@ -141,8 +141,8 @@ body {
 }
 @media screen and (max-width: 480px) {
   .text-container {
-    gap: 5px;
-    top: 5px;
+    gap: 0;
+    top: 18px;
     left: calc(50% - 138px);
   }
 }
@@ -279,7 +279,6 @@ body {
 @media screen and (max-width: 1366px) {
   .right {
     gap: 15px;
-    bottom: 10px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -295,26 +294,18 @@ body {
 @media screen and (max-width: 640px) {
   .right {
     gap: 18px;
-    top: calc(50% - 36px);
-    bottom: unset;
     right: 10px;
   }
 }
 @media screen and (max-width: 480px) {
   .right {
-    flex-direction: row-reverse;
+    flex-direction: row;
     top: unset;
     bottom: 5px;
     width: 278px;
     left: calc(50% - 138px);
-    justify-content: space-between;
+    justify-content: flex-start;
   }
-}
-
-.button-top {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
 }
 
 .button {
