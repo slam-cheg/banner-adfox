@@ -1,0 +1,376 @@
+@font-face {
+  font-family: "Brygada1918";
+  src: url("./Brygada1918-Medium.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("./Raleway-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("./Raleway-Medium.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 110px;
+  width: 100%;
+  margin: 0;
+}
+
+.link {
+  background: #1a2536;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.girl {
+  position: absolute;
+  top: 4px;
+  left: 100px;
+  transform: translate(0px);
+  transition: transform 0.3s;
+  z-index: 2;
+  height: 102px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+@media screen and (max-width: 2990px) {
+  .girl {
+    left: 30px;
+    max-width: 328px;
+  }
+}
+@media screen and (max-width: 2047px) {
+  .girl {
+    left: 40px;
+    max-width: 422px;
+  }
+}
+@media screen and (max-width: 1919px) {
+  .girl {
+    left: 4px;
+    max-width: 376px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .girl {
+    display: none;
+  }
+}
+
+.text-container {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  gap: 78px;
+  align-items: center;
+  transform: translateY(0);
+  transition: transform 0.3s;
+}
+@media screen and (max-width: 2990px) {
+  .text-container {
+    align-items: flex-end;
+  }
+}
+@media screen and (max-width: 1919px) {
+  .text-container {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 959px) {
+  .text-container {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .text-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
+.text {
+  font-family: "Brygada1918";
+  font-weight: 500;
+  color: #1a2536;
+  font-size: 52px;
+  line-height: 1;
+  transform: translateX(0);
+  transition: transform 0.3s;
+}
+@media screen and (max-width: 2990px) {
+  .text {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 2047px) {
+  .text {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 1919px) {
+  .text {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 959px) {
+  .text {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .text {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .text {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1919px) {
+  .text_main {
+    width: 342px;
+  }
+}
+@media screen and (max-width: 959px) {
+  .text_main {
+    width: 260px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .text_main {
+    width: unset;
+  }
+}
+.text_sale {
+  transform: translateX(0);
+  transition: transform 0.3s;
+}
+@media screen and (max-width: 1919px) {
+  .text_sale {
+    position: absolute;
+    top: 0px;
+    right: 8px;
+  }
+}
+@media screen and (max-width: 959px) {
+  .text_sale {
+    right: 50px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .text_sale {
+    right: unset;
+    position: relative;
+  }
+}
+.text-left {
+  display: flex;
+  gap: 90px;
+  align-items: center;
+}
+@media screen and (max-width: 2990px) {
+  .text-left {
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .text-left {
+    gap: 2px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.text-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  transform: translateX(0);
+  transition: transform 0.3s;
+}
+@media screen and (max-width: 2990px) {
+  .text-right {
+    gap: 10px;
+    align-items: flex-start;
+    flex-direction: column;
+    transform: translateY(-4px);
+  }
+}
+@media screen and (max-width: 2047px) {
+  .text-right {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 1919px) {
+  .text-right {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+@media screen and (max-width: 959px) {
+  .text-right {
+    transform: unset;
+  }
+}
+.text_promocode {
+  font-family: "Raleway";
+  font-size: 22px;
+  transform: translateY(4px);
+  line-height: 1.2;
+}
+@media screen and (max-width: 2047px) {
+  .text_promocode {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1919px) {
+  .text_promocode {
+    font-size: 12px;
+    transform: unset;
+  }
+}
+.text_btn {
+  font-family: "Raleway";
+  background: #1a2536;
+  font-size: 30px;
+  border-radius: 5px;
+  color: #fff6c3;
+  padding: 2px 5px;
+}
+@media screen and (max-width: 2047px) {
+  .text_btn {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1919px) {
+  .text_btn {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .text_btn {
+    font-size: 11px;
+  }
+}
+
+.right {
+  background: #fff6c3;
+  padding: 19px 80px;
+  position: absolute;
+  right: 100px;
+  display: flex;
+  gap: 90px;
+  z-index: 3;
+  transition: opacity 0.3s;
+  align-items: center;
+  border-radius: 10px;
+  height: 102px;
+  opacity: 1;
+}
+@media screen and (max-width: 2990px) {
+  .right {
+    right: 30px;
+    padding: 20px;
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 1919px) {
+  .right {
+    right: 4px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .right {
+    width: calc(100% - 8px);
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 959px) {
+  .right {
+    gap: 20px;
+  }
+}
+
+.button {
+  background: #bfff0b;
+  outline: none;
+  border: none;
+  color: #262b11;
+  font-family: "Brygada1918";
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.2;
+  padding: 14px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button:hover {
+  transition: 0.3s;
+  background: #d9ff71;
+}
+@media screen and (max-width: 1919px) {
+  .button {
+    font-size: 20px;
+    padding: 20px 30px;
+  }
+}
+@media screen and (max-width: 959px) {
+  .button {
+    padding: 12px 22px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .button {
+    padding: 17px 22px;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 479px) {
+  .button {
+    font-size: 12px;
+    padding: 4px 6px;
+    position: absolute;
+    height: unset;
+    right: calc(50% - 130px);
+    bottom: 20px;
+  }
+}
+
+.anim.right {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.anim.girl {
+  transform: translateX(-600px);
+  transition: transform 0.3s;
+}
+.anim.text-container {
+  transform: translateY(-100px);
+  transition: transform 0.3s;
+}
+.anim.text_main, .anim.text-right, .anim.text_sale {
+  transform: translateY(-200px);
+  transition: transform 0.3s;
+}

@@ -1,0 +1,356 @@
+@font-face {
+	font-family: "Brygada1918";
+	src: url("./Brygada1918-Medium.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Raleway";
+	src: url("./Raleway-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Raleway";
+	src: url("./Raleway-Medium.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 110px;
+	width: 100%;
+	margin: 0;
+}
+
+.link {
+	background: #1a2536;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	text-decoration: none;
+	overflow: hidden;
+}
+
+.girl {
+	position: absolute;
+	top: 4px;
+	left: 100px;
+	transform: translate(0px);
+	transition: transform 0.3s;
+	z-index: 2;
+	height: calc(110px - 8px);
+	object-fit: cover;
+	border-radius: 10px;
+
+	@media screen and (max-width: 2990px) {
+		left: 30px;
+		max-width: 328px;
+	}
+
+	@media screen and (max-width: 2047px) {
+		left: 40px;
+		max-width: 422px;
+	}
+
+	@media screen and (max-width: 1919px) {
+		left: 4px;
+		max-width: 376px;
+	}
+
+	@media screen and (max-width: 1199px) {
+		display: none;
+	}
+}
+
+.text-container {
+	width: max-content;
+	display: flex;
+	gap: 78px;
+	align-items: center;
+	transform: translateY(0);
+	transition: transform 0.3s;
+
+	@media screen and (max-width: 2990px) {
+		align-items: flex-end;
+	}
+
+	@media screen and (max-width: 1919px) {
+		gap: 30px;
+	}
+
+	@media screen and (max-width: 959px) {
+		gap: 20px;
+	}
+
+	@media screen and (max-width: 639px) {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 6px;
+	}
+
+	@media screen and (max-width: 479px) {
+	}
+}
+
+.text {
+	font-family: "Brygada1918";
+	font-weight: 500;
+	color: #1a2536;
+	font-size: 52px;
+	line-height: 1;
+	transform: translateX(0);
+	transition: transform 0.3s;
+
+	@media screen and (max-width: 2990px) {
+		font-size: 50px;
+	}
+
+	@media screen and (max-width: 2047px) {
+		font-size: 38px;
+	}
+
+	@media screen and (max-width: 1919px) {
+		font-size: 32px;
+	}
+
+	@media screen and (max-width: 959px) {
+		font-size: 24px;
+	}
+
+	@media screen and (max-width: 639px) {
+		font-size: 20px;
+	}
+
+	@media screen and (max-width: 479px) {
+		font-size: 16px;
+	}
+
+	&_main {
+		@media screen and (max-width: 1919px) {
+			width: 342px;
+		}
+
+		@media screen and (max-width: 959px) {
+			width: 260px;
+		}
+		@media screen and (max-width: 639px) {
+			width: unset;
+		}
+	}
+
+	&_sale {
+		transform: translateX(0);
+		transition: transform 0.3s;
+
+		@media screen and (max-width: 1919px) {
+			position: absolute;
+			top: 0px;
+			right: 8px;
+		}
+
+		@media screen and (max-width: 959px) {
+			right: 50px;
+		}
+
+		@media screen and (max-width: 639px) {
+			right: unset;
+			position: relative;
+		}
+	}
+
+	&-left {
+		display: flex;
+		gap: 90px;
+		align-items: center;
+
+		@media screen and (max-width: 2990px) {
+			gap: 50px;
+		}
+
+		@media screen and (max-width: 639px) {
+			gap: 2px;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	&-right {
+		display: flex;
+		gap: 20px;
+		align-items: center;
+		transform: translateX(0);
+		transition: transform 0.3s;
+
+		@media screen and (max-width: 2990px) {
+			gap: 10px;
+			align-items: flex-start;
+			flex-direction: column;
+			transform: translateY(-4px);
+		}
+
+		@media screen and (max-width: 2047px) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		@media screen and (max-width: 1919px) {
+			flex-direction: row;
+			align-items: flex-end;
+		}
+
+		@media screen and (max-width: 959px) {
+			transform: unset;
+		}
+	}
+
+	&_promocode {
+		font-family: "Raleway";
+		font-size: 22px;
+		transform: translateY(4px);
+		line-height: 1.2;
+
+		@media screen and (max-width: 2047px) {
+			font-size: 24px;
+		}
+
+		@media screen and (max-width: 1919px) {
+			font-size: 12px;
+			transform: unset;
+		}
+	}
+
+	&_btn {
+		font-family: "Raleway";
+		background: #1a2536;
+		font-size: 30px;
+		border-radius: 5px;
+		color: #fff6c3;
+		padding: 2px 5px;
+
+		@media screen and (max-width: 2047px) {
+			font-size: 24px;
+		}
+
+		@media screen and (max-width: 1919px) {
+			font-size: 16px;
+		}
+
+		@media screen and (max-width: 479px) {
+			font-size: 11px;
+		}
+	}
+}
+
+.right {
+	background: #fff6c3;
+	padding: 19px 80px;
+	position: absolute;
+	right: 100px;
+	display: flex;
+	gap: 90px;
+	z-index: 3;
+	transition: opacity 0.3s;
+	align-items: center;
+	border-radius: 10px;
+	height: calc(110px - 8px);
+	opacity: 1;
+
+	@media screen and (max-width: 2990px) {
+		right: 30px;
+		padding: 20px;
+		gap: 50px;
+	}
+
+	@media screen and (max-width: 1919px) {
+		right: 4px;
+	}
+
+	@media screen and (max-width: 1199px) {
+		width: calc(100% - 8px);
+		justify-content: center;
+	}
+
+	@media screen and (max-width: 959px) {
+		gap: 20px;
+	}
+}
+
+.button {
+	background: #bfff0b;
+	outline: none;
+	border: none;
+	color: #262b11;
+	font-family: "Brygada1918";
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 1.2;
+	padding: 14px 50px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+
+	&:hover {
+		transition: 0.3s;
+		background: #d9ff71;
+	}
+
+	@media screen and (max-width: 1919px) {
+		font-size: 20px;
+		padding: 20px 30px;
+	}
+
+	@media screen and (max-width: 959px) {
+		padding: 12px 22px;
+		font-size: 16px;
+	}
+
+	@media screen and (max-width: 639px) {
+		padding: 17px 22px;
+		height: 100%;
+	}
+
+	@media screen and (max-width: 479px) {
+		font-size: 12px;
+		padding: 4px 6px;
+		position: absolute;
+		height: unset;
+		right: calc(50% - 130px);
+		bottom: 20px;
+	}
+}
+
+.anim {
+	&.right {
+		opacity: 0;
+		transition: opacity 0.3s;
+	}
+
+	&.girl {
+		transform: translateX(-600px);
+		transition: transform 0.3s;
+	}
+
+	&.text-container {
+		transform: translateY(-100px);
+		transition: transform 0.3s;
+	}
+
+	&.text_main,
+	&.text-right,
+	&.text_sale {
+		transform: translateY(-200px);
+		transition: transform 0.3s;
+	}
+}
